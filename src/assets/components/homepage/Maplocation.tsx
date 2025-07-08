@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import FilterBar from './Filtersection';
 
 const locations = [
   {
@@ -46,18 +46,18 @@ const locations = [
 ];
 
 const MapSection = () => {
-  const [location, setLocation] = useState('');
-  const [price, setPrice] = useState('');
-  const [duration, setDuration] = useState('');
+  //   const [location, setLocation] = useState('');
+  //   const [price, setPrice] = useState('');
+  //   const [duration, setDuration] = useState('');
 
-  const handleSearch = () => {
-    console.log('Searching with filters:', {
-      location,
-      price,
-      duration,
-    });
-    // Add filtering logic or call to backend here
-  };
+  //   const handleSearch = () => {
+  //     console.log('Searching with filters:', {
+  //       location,
+  //       price,
+  //       duration,
+  //     });
+  //     // Add filtering logic or call to backend here
+  //   };
 
   return (
     <div className='relative w-full bg-white py-16'>
@@ -95,52 +95,7 @@ const MapSection = () => {
       </div>
 
       {/* Filters Section */}
-      <div className='mt-10 w-full max-w-6xl mx-auto bg-black rounded-lg p-4 flex flex-col md:flex-row gap-4 md:gap-6 items-center justify-between text-white'>
-        <div className='flex-1'>
-          <label className='text-sm block mb-1'>Location</label>
-          <input
-            type='text'
-            placeholder='Where would you like to stay?'
-            value={location}
-            onChange={(e) => setLocation(e.target.value)}
-            className='w-full p-2 rounded-md text-black'
-          />
-        </div>
-
-        <div className='flex-1'>
-          <label className='text-sm block mb-1'>Price</label>
-          <select
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-            className='w-full p-2 rounded-md text-black'
-          >
-            <option>Choose a price range</option>
-            <option value='100-200'>₦100k - ₦200k</option>
-            <option value='200-500'>₦200k - ₦500k</option>
-          </select>
-        </div>
-
-        <div className='flex-1'>
-          <label className='text-sm block mb-1'>Duration</label>
-          <select
-            value={duration}
-            onChange={(e) => setDuration(e.target.value)}
-            className='w-full p-2 rounded-md text-black'
-          >
-            <option>Select duration</option>
-            <option value='1w'>1 Week</option>
-            <option value='1m'>1 Month</option>
-            <option value='6m'>6 Months</option>
-          </select>
-        </div>
-
-        <button
-          onClick={handleSearch}
-          className='bg-yellow-500 text-black px-6 py-3 rounded-md font-semibold mt-4 md:mt-0'
-        >
-          View Available Apartment
-        </button>
-      </div>
+      <FilterBar />
     </div>
   );
 };
