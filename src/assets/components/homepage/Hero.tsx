@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const slides = [
   {
@@ -36,6 +36,12 @@ const HeroSlider = () => {
   const [current, setCurrent] = useState(0);
   const slideInterval = useRef<number | null>(null);
 
+  /*************  ✨ Windsurf Command ⭐  *************/
+  /**
+   * Go to a specific slide in the slider by index.
+   * @param {number} index The index of the slide to go to.
+   */
+  /*******  2b5482eb-ef7a-48ef-9633-7b3d90c8b72d  *******/
   const goToSlide = (index: number) => {
     setCurrent(index);
   };
@@ -44,14 +50,14 @@ const HeroSlider = () => {
     setCurrent((prev) => (prev + 1) % slides.length);
   };
 
-  //   useEffect(() => {
-  //     slideInterval.current = setInterval(nextSlide, 5000);
-  //     return () => {
-  //       if (slideInterval.current !== null) {
-  //         clearInterval(slideInterval.current);
-  //       }
-  //     };
-  //   }, []);
+  useEffect(() => {
+    slideInterval.current = setInterval(nextSlide, 5000);
+    return () => {
+      if (slideInterval.current !== null) {
+        clearInterval(slideInterval.current);
+      }
+    };
+  }, []);
 
   return (
     <div className='relative w-full h-[450px] lg:h-[500px] overflow-hidden'>
