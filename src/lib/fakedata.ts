@@ -65,3 +65,28 @@ export const featuredRooms = [
     "term": "Long term"
   }
 ]
+
+
+export const testimonials = [
+  {
+    name: 'Amaka Eze',
+    review:
+      'As someone moving back from the UK, I was worried about housing. Joshua Kings made it incredibly easy.',
+    rating: 4,
+    image: '/person1.png',
+  },
+  {
+    name: 'Tunde Felix',
+    review:
+      "I've used several platforms in Nigeria, but this was the first time I truly got what I paid for.",
+    rating: 4,
+    image: '/person2.png',
+  },
+  {
+    name: 'Kano Jogo',
+    review:
+      "It's the honesty for me. From the viewing to move-in, everything was transparent. No last-minute surprises.",
+    rating: 4,
+    image: '/person3.png',
+  },
+];

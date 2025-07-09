@@ -1,16 +1,15 @@
-import { Outlet } from "react-router-dom";
-import Navbar from "./assets/components/common/Navbar";
+import { Outlet } from 'react-router-dom';
+import Navbar from './assets/components/common/Navbar';
+import Footer from './assets/components/common/Footer';
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Outlet/>
-    <footer>
-      Here is teh footr
-    </footer>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App;
