@@ -5,7 +5,7 @@ interface testimonyType {
   image: string;
 }
 
-const TestimonialCard = ({ item, i }: { item: testimonyType }) => {
+const TestimonialCard = ({ item, i }: { item: testimonyType; i: number }) => {
   return (
     <div key={i} className='bg-white text-black p-6 rounded-[12px] shadow-md'>
       <h4 className='font-semibold text-[17px] mb-2'>{item.name}</h4>
