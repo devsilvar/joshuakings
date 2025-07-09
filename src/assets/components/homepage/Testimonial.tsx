@@ -147,7 +147,7 @@ const TestimonialsSection = () => {
       {/* Desktop Grid */}
       <div className='hidden md:grid grid-cols-1 md:grid-cols-3 gap-6 my-10'>
         {testimonials.map((t, i) => (
-          <TestimonialCard item={t} key={i} />
+          <TestimonialCard item={t} i={i} key={i} />
         ))}
       </div>
     </section>
