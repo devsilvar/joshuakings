@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 type PropertyCardProps = {
   image: string;
@@ -67,9 +68,11 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
               /month
             </span>
           </span>
-          <button className='bg-[#C8953A] hover:bg-yellow-700 text-white text-sm px-3 py-2 rounded-md'>
-            Check Availability
-          </button>
+          <Link to={`/rooms/${title.replace(/\s+/g, '-').toLowerCase()}`}>
+            <button className='bg-[#C8953A] hover:bg-yellow-700 text-white text-sm px-3 py-2 rounded-md'>
+              Check Availability
+            </button>
+          </Link>
         </div>
       </div>
     </div>

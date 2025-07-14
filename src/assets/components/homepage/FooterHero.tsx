@@ -1,8 +1,8 @@
 const FooterHero = () => {
   return (
-    <section className='relative w-full lg:h-[700px] bg-[#FCE6B6] flex items-center justify-center overflow-hidden'>
+    <section className='relative w-full lg:h-[600px]  bg-[#FCE6B6] flex flex-col   items-center justify-center overflow-hidden'>
       {/* Circle background images */}
-      <img
+      {/* <img
         src='/circleour.png'
         alt='Outer Circle'
         className='hidden lg:block  absolute top-0 left-1/2 -translate-x-1/2  object-contain z-0 pointer-events-none'
@@ -11,10 +11,10 @@ const FooterHero = () => {
         src='/circlein.png'
         alt='Inner Circle'
         className='absolute scale-150 block lg:scale-100 lg:top-10 top-[64%] left-1/2 -translate-x-1/2 object-contain z-10 pointer-events-none'
-      />
+      /> */}
 
       {/* Content in center */}
-      <div className='relative z-20 text-center max-w-xl px-4 flex md:h-screen h-[350px] flex-col items-center justify-start mt-[21%] lg:mt-[15%]'>
+      <div className='relative z-20 text-center max-w-xl px-4 flex mb-10 flex-col items-center justify-start mt-[21%] md:mt-[10%] lg:mt-[5%]'>
         <h1 className='text-2xl sm:text-3xl md:text-[28px] leading-[35px] font-bold mb-2 text-[#000000]'>
           The Comfort You Deserve Is Just One Click Away.
         </h1>
@@ -27,7 +27,7 @@ const FooterHero = () => {
       </div>
 
       {/* Room image below */}
-      <div className='absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-[90%] max-w-3xl overflow-hidden shadow-md'>
+      <div className='relative lg:w-full  w-[90%] max-w-4xl overflow-hidden shadow-md'>
         <img
           src='/footerheroimg.png'
           alt='Room Preview'

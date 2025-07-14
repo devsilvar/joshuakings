@@ -1,5 +1,5 @@
 import FilterBar from './Filtersection';
-
+import { useNavigate } from 'react-router-dom';
 const locations = [
   {
     name: 'Ikeja GRA',
@@ -46,6 +46,8 @@ const locations = [
 ];
 
 const MapSection = () => {
+  const navigate = useNavigate();
+
   //   const [location, setLocation] = useState('');
   //   const [price, setPrice] = useState('');
   //   const [duration, setDuration] = useState('');
@@ -69,6 +71,9 @@ const MapSection = () => {
         {locations.map((loc, idx) => (
           <div
             key={idx}
+            onClick={() =>
+              navigate(`/search?location=${encodeURIComponent(loc.name)}`)
+            }
             className={`group absolute ${loc.position} transform -translate-x-1/2 -translate-y-1/2 text-center`}
           >
             <div className='relative text-center'>

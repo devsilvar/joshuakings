@@ -1,9 +1,9 @@
 const WhyPeopleChoose = () => {
   return (
-    <section className='bg-white py-12 my-36 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between '>
+    <section className='bg-white py-2 lg:py-12 my-36 px-6 md:px-16 gap-y-10 flex flex-col md:flex-row items-center justify-between '>
       {/* Text + Stats */}
       <div className='w-full md:w-1/2 space-y-6'>
-        <h2 className='md:text-[28px] lg:leading-[35px] sm:text-[18px] font-[700] leading-snug text-gray-800'>
+        <h2 className='md:text-[28px] lg:leading-[35px] text-[22px] font-[700] leading-snug text-gray-800'>
           Why People Choose Joshua <br className='hidden md:block' />
           Kings As Their Preferred Choice.
         </h2>
@@ -41,7 +41,7 @@ const WhyPeopleChoose = () => {
           className='rounded-xl lg:h-[565px] w-[467px] shadow-md'
         />
 
-        <div className='absolute bottom-[10%] left-1/2 w-[80%] lg:w-[57%] transform -translate-x-1/2 z-20 right-4 bg-white rounded-md p-5 shadow-md'>
+        <div className='absolute bottom-[10%] left-1/2 w-[92%] lg:w-[57%] transform -translate-x-1/2 z-20 right-4 bg-white rounded-md p-5 shadow-md'>
           <h2 className='text-[18px] font-semibold text-center'>
             10K+ stays booked
           </h2>

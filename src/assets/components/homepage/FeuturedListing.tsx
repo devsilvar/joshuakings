@@ -8,12 +8,12 @@ const FeuturedListing = () => {
           <h3 className='text-[28px] font-semibold'>
             Discover Our Featured Listings
           </h3>
-          <p className='text-[12px]'>
+          <p className='text-[15px]'>
             Handpicked premium properties that define luxury living and comfort.
           </p>
         </div>
 
-        <div className='flex gap-3 items-center md:block hidden'>
+        <div className=' gap-3 items-center md:flex hidden'>
           <h3 className='text-[14px] font-semibold'>See All Properties</h3>
           <img src='/LinkUp.svg' alt='' />
         </div>
@@ -34,7 +34,7 @@ const FeuturedListing = () => {
           />
         ))}
       </div>
-      <div className='flex gap-3 mt-10 items-center md:hidden block justify-center'>
+      <div className=' gap-3 mt-10 items-center md:hidden flex justify-center'>
         <h3 className='text-[14px] font-semibold'>See All Properties</h3>
         <img src='/LinkUp.svg' alt='' />
       </div>

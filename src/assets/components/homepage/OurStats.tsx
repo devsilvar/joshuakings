@@ -1,6 +1,6 @@
 const HeroStats = () => {
   return (
-    <section className='bg-white py-12 mt-10 px-6 md:px-20 flex flex-col-reverse md:flex-row items-center justify-between gap-10'>
+    <section className='bg-white lg:py-12 mt-10 px-6 md:px-20 flex flex-col-reverse md:flex-row items-center justify-between gap-10'>
       {/* Image + Card Stack */}
       <div className='relative w-full md:w-1/2 max-w-2xl'>
         {/* Bottom Image */}
