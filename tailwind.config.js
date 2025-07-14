@@ -14,7 +14,11 @@ export default {
           0px 64.81px 46.85px 0px #44444413,
           0px 100px 80px 0px #4444441A
         `
-      }},
+      },  fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
+    
+    },
   },
   plugins: [],
 }

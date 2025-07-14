@@ -44,11 +44,12 @@ export default function NavigationItems({
           {item.label}
         </Link>
       ))}
-      <div className='absolute bottom-16  right-1/4'>
+      <div className='absolute w-full top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"'>
         <Button
           variant='outline'
           link='/contact'
-          className='w-full bg-[#FDE056] font-[bold] border-transparent shadow-2xl'
+          onClick={onItemClick}
+          className=' bg-[#FDE056] font-montserrat w-[80%] px-2 lg:px-8 py-2 mx-auto block  border-transparent shadow-deep hover:scale-110 hover:bg-[#FDE056] hover:text-black transition-all duration-300 text-black text-lg font-semibold'
         >
           Contact Us
         </Button>
@@ -77,8 +78,8 @@ export default function NavigationItems({
 
       <Button
         variant='outline'
-        className='bg-[#C8953A] w-[200px] h-[40px] text-white text-[16.5px] font-[400] border-transparent  rounded-xl hover:text-gray-800 shadow-2xl'
         link='/contact'
+        className=' bg-[#FDE056] font-montserrat w-[70%] px-2 lg:px-8 py-2 mx-auto block  border-transparent shadow-deep hover:scale-110 hover:bg-[#FDE056] hover:text-black transition-all duration-300 text-black text-lg font-semibold'
       >
         Contact Us
       </Button>
