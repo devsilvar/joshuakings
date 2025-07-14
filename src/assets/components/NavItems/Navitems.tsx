@@ -79,7 +79,7 @@ export default function NavigationItems({
       <Button
         variant='outline'
         link='/contact'
-        className=' bg-[#FDE056] font-montserrat w-[70%] px-2 lg:px-8 py-2 mx-auto block  border-transparent shadow-deep hover:scale-110 hover:bg-[#FDE056] hover:text-black transition-all duration-300 text-black text-lg font-semibold'
+        className=' bg-[#FDE056] font-montserrat px-2 lg:px-8 py-2 mx-auto block  border-transparent shadow-deep hover:scale-110 hover:bg-[#FDE056] hover:text-black transition-all duration-300 text-black text-lg font-semibold'
       >
         Contact Us
       </Button>
