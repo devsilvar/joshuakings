@@ -121,14 +121,14 @@ const FilterBar = () => {
 
         <Button
           onClick={handleSearch}
-          className='bg-gradient-to-r lg:w-full md:block hidden  from-yellow-600 to-yellow-500 text-black px-6 py-3 rounded-full font-semibold text-sm hover:opacity-90 transition'
+          className='bg-gradient-to-r lg:w-full md:block hidden  from-yellow-600 to-yellow-500 text-black px-6 py-3 rounded-[5px] font-semibold text-sm hover:opacity-90 transition'
         >
           View Available Apartment
         </Button>
       </div>
       <Button
         onClick={handleSearch}
-        className='bg-gradient-to-r mx-auto my-5 lg:w-full md:hidden block  from-yellow-600 to-yellow-500 text-black px-6 py-3 rounded-[10px] font-semibold text-sm hover:opacity-90 transition'
+        className='bg-gradient-to-r mx-auto my-5 lg:w-full md:hidden block  from-yellow-600 to-yellow-500 text-black px-6 py-3 rounded-[5px] font-semibold text-sm hover:opacity-90 transition'
       >
         View Available Apartment
       </Button>
